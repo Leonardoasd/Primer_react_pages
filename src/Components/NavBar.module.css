@@ -1,0 +1,89 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6997B1;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 10;
+    height: 9vh;
+}
+.navOpen {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #6997B1;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    z-index: 10;
+}
+.navLink {
+    display: flex;
+    font-size: 1.7em;
+    font-weight: 400;
+    color: black;
+    transition: 0.5s;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.closeNav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.linksContainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.66rem;
+    width: 70vw;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 55vw;
+}
+.menuNav, .closeNav {
+    transition: 0.5s;
+}
+.menuNav:hover, .closeNav:hover {
+    cursor: pointer;
+    background-color: #405f6f;
+    border-radius: 10%;
+    padding: 5px;
+}
+.navLink:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+.border {
+    animation-name: animacionborde;
+    animation-duration: 1s;
+    background-color: black;
+    animation-fill-mode: forwards;
+    margin-bottom: 50px;
+}
+@keyframes animacionborde {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 2px;
+    }
+}
+@media (max-width: 400px) {
+    .logo {
+        font-size: 1em;
+    }
+}
+@media (max-width: 310px) {
+    .logo {
+        font-size: 0.8em;
+    }
+}

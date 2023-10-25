@@ -1,0 +1,32 @@
+.divContainer {
+    display: flex;
+    text-align: center;
+    background: linear-gradient(to bottom, #7C8A95, #8F9C92);
+    height: 50vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4em;
+}
+.divContainer h1, .divContainer p {
+    width: 50vw;
+}
+.divContainer h1 {
+    margin-top: 100px;
+}
+@media (max-width: 1100px) {
+    .divContainer p, .divContainer h1 {
+        width: 80vw;
+    }
+    .divContainer {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 450px) {
+    .divContainer p, .divContainer h1 {
+        width: 90vw;
+    }
+    .divContainer {
+        font-size: 0.9em;
+    }
+}
