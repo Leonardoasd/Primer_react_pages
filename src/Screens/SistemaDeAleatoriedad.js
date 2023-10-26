@@ -6,7 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const SistemaDeAleatoriedad = () => {
 const [palabra, setPalabra] = useState("")
 const [palabra2, setPalabra2] = useState([])
-const [palabraAleatoria, setPalabraAleatoria] = useState("Bienvenidoss")
+const [palabraAleatoria, setPalabraAleatoria] = useState("Bienvenidos")
 
 const handleInputChange = (event) => {
   setPalabra(event.target.value); 
