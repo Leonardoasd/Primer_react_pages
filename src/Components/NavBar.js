@@ -46,14 +46,16 @@ const Navbar = () => {
       link: "Contacto"
     }
   ]
+  console.log(windowDimension.width > windowDimension.height)
   return (
     <div className={navBarOpen === false ? styles.navBar : styles.navOpen}>
       {!navBarOpen && <p className={styles.logo} >SDA | Sistema de Aleatoriedad</p>}
 
-      {!navBarOpen && windowDimension.width < 900 ? (
+      {!navBarOpen && (windowDimension.width < 900 || windowDimension.height > 1300) ? (
       <AiOutlineMenu onClick={() => setNavBarOpen(!navBarOpen)} className={styles.menuNav} size={25} />
       )
-       : (windowDimension.width < 900 && (<AiOutlineClose onClick={() => setNavBarOpen(!navBarOpen)} className={styles.closeNav} size={40} />))}
+       : ((windowDimension.width < 900 || windowDimension.height > 1300) && (<AiOutlineClose onClick={() => setNavBarOpen(!navBarOpen)} className={styles.closeNav} size={40} />))
+       }
       {navBarOpen &&
         <ul>
         {links.map((x) => (
@@ -65,13 +67,13 @@ const Navbar = () => {
             className={styles.navLink}>
               {reemplazarGuionesBajos(x.link)}
             </Link>
-            <div className={windowDimension.width < 900 && styles.border}></div>
+            <div className={styles.border}></div>
           </div>
         ))}
         </ul>
       }
       {
-        windowDimension.width > 900 && 
+        (windowDimension.width > 900 && windowDimension.height < 1790) && 
         (<ul className={styles.linksContainer}>
           {links.map((x) => (
             <div>

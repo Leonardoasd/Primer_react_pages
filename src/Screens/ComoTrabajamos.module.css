@@ -30,3 +30,19 @@
         font-size: 0.9em;
     }
 }
+@media (min-height: 1300px){
+    .divContainer p, .divContainer h1 {
+        width: 90vw;
+    }
+    .divContainer {
+        font-size: 2em;
+    }
+}
+@media (min-height: 3039px){
+    .divContainer p, .divContainer h1 {
+        width: 90vw;
+    }
+    .divContainer {
+        font-size: 2.5em;
+    }
+}

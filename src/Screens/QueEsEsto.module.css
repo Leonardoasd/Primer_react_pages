@@ -32,3 +32,23 @@
         font-size: 0.9em;
     }
 }
+@media (min-height: 1300px){
+    
+    .servicesContainer p, .servicesContainer h1 {
+        width: 90vw;
+    }
+    .servicesContainer {
+        font-size: 2em;
+        height: 55vh;
+    }
+}
+@media (min-height: 3039px){
+    
+    .servicesContainer p, .servicesContainer h1 {
+        width: 90vw;
+    }
+    .servicesContainer {
+        font-size: 2.5em;
+        height: 48vh;
+    }
+}
