@@ -46,7 +46,7 @@ const Navbar = () => {
       link: "Contacto"
     }
   ]
-  console.log(windowDimension.width > windowDimension.height)
+  
   return (
     <div className={navBarOpen === false ? styles.navBar : styles.navOpen}>
       {!navBarOpen && <p className={styles.logo} >SDA | Sistema de Aleatoriedad</p>}
