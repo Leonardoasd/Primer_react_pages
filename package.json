@@ -1,8 +1,8 @@
 {
-  "name": "primer-react",
+  "name": "sistema-de-aleatoriedad",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://leonardoasd.github.io/Sistema_de_Aleatoriedad/",
+  "homepage": "https://leonardoasd.github.io/sistema-de-aleatoriedad/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
