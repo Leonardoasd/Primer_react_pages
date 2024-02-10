@@ -1,12 +1,19 @@
 .sistemaContainer {
   background: linear-gradient(to bottom, #e5f4ff, #c0c0c0);
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
 }
 .pantallaCentral {
-    justify-content: center;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     font-size: 4.5em;
-    padding-top: 5vw;
+    margin: 0;
+    height: 30vh;
+}
+.buttonAleatorio{
+  margin-top: 20px;
 }
 .panelAndList {
     display: flex;
@@ -110,9 +117,13 @@ ul {
   }
   
   @media (max-width: 900px){
+    .sistemaContainer{
+      height: auto;
+    }
     .pantallaCentral {
-      padding: 60px 60px 0 60px;
-      font-size: 3.9em;
+      padding: 10vh 60px 0 60px;
+      font-size: 3.5em;
+      height: auto;
     }
     .panelAndList {
     flex-direction: column;

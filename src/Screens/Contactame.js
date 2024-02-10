@@ -4,7 +4,7 @@ import styles from "./Contactame.module.css"
 const Contactame = () => {
   return (
     <div name="Contacto" className={styles.contacto}>
-      <h1>Contactame</h1>
+      <h1>Contáctame</h1>
       <form action='https://getform.io/f/c7239dbc-4c30-4f22-b77f-9e740f6d5f16' method="POST" className={styles.form}>
         <label for="name">Nombre Completo</label>
         <input id="name" name="Nombre Completo" className={styles.input} />

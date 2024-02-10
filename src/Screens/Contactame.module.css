@@ -1,6 +1,11 @@
 .contacto {
     background: linear-gradient(to bottom, #8F9C92, #7C8A95);
     font-size: 1.4em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .contacto h1 {
     text-align: center;
